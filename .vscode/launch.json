@@ -1,16 +1,14 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"type": "chrome",
-			"request": "attach",
-      "name": "Attach",
-      "port": 9222,
-      "webRoot": "${workspaceRoot}/dist",
-      "sourceMaps": true,
-			"sourceMapPathOverrides": {
-				"webpack:///./*": "${workspaceRoot}/*"
-			}
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "chrome",
+    "request": "attach",
+    "name": "Attach",
+    "port": 9222,
+    "webRoot": "${workspaceRoot}/dist",
+    "sourceMaps": true,
+    "sourceMapPathOverrides": {
+      "webpack:///./*": "${workspaceRoot}/*"
     }
-	]
+  }]
 }
