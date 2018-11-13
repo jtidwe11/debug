@@ -10,7 +10,7 @@ Upgrades from standard version:
 
 - [Webpack](https://github.com/webpack/webpack) - all the benefits of Webpack with HMR out of the box.
 - [TSLint](https://github.com/palantir/tslint) - auto-lint and fix on save using [JSS](https://github.com/blakeembrey/tslint-config-standard).
-- [Chrome Debuging](https://github.com/Microsoft/vscode-chrome-debug) - A tool to debug the app's **renderer process**.
+- [Chrome Debugging](https://github.com/Microsoft/vscode-chrome-debug) - A tool to debug the app's **renderer process**.
 
 ## To Use
 
@@ -29,4 +29,4 @@ npm start
 
 ## Debugging
 
-The Chrome Debug extension requires [VS Code](https://github.com/microsoft/vscode).  Simply add a breakpoint and hit F5.  The debugger will attach and break upon reaching the point.
+The Chrome Debug extension requires [VS Code](https://github.com/microsoft/vscode).  Simply add a breakpoint and hit **F5**.  The debugger will attach and break upon reaching the point.
