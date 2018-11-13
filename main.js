@@ -11,10 +11,11 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile('http://localhost:4000');
+  mainWindow.loadURL('http://localhost:4000');
 
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // Open the DevTools.  Careful - using this and the Chrome Debugger
+  // does not play nicely together.
+  // mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on("closed", () => {
