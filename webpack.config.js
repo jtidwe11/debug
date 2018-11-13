@@ -2,22 +2,18 @@
 const webpack = require('webpack')
 const resolve = require('path').resolve
 const { spawn } = require('child_process')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   target: 'electron-renderer',
-  entry: { renderer: './src/index.ts' },
+  entry: { renderer: './src/renderer.ts' },
   output: { filename: 'js/index.js' },
   context: __dirname,
   devtool: 'inline-source-map',
   module: {
     rules: [
-      { test: /\.ts$/, loader: 'ts-loader', include: resolve('src'), options: { appendTsSuffixTo: [/\.vue$/], transpileOnly: true } },
-      { test: /\.vue$/, loader: 'vue-loader' },
-      { test: /\.pug$/, loader: 'pug-plain-loader' },
-      { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] }
+      { test: /\.ts$/, loader: 'ts-loader', include: resolve('src'), options: { transpileOnly: true } }
     ]
   },
   plugins: [
@@ -25,14 +21,10 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin(),
-    new ForkTsCheckerWebpackPlugin({ tslint: true, tslintAutoFix: true, vue: true, watch: ['./src'] }),
-    new VueLoaderPlugin()
+    new ForkTsCheckerWebpackPlugin({ tslint: true, tslintAutoFix: true, watch: ['./src'] }),
   ],
   resolve: {
-    extensions: ['.ts', '.js', '.vue', '.json'],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    }
+    extensions: ['.ts', '.js', '.json']
   },
   devServer: {
     port: 4000,

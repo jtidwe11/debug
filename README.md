@@ -1,24 +1,32 @@
-## electron-quick-start-typescript
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-Required tools:
-1. [Node](https://nodejs.org)
-2. [VS Code](https://github.com/microsoft/vscode)
-3. [Chrome Debugger Extension](https://github.com/Microsoft/vscode-chrome-debug)
+# electron-quick-start-typescript
 
-Recommended tools:
-1. [Vetur](https://github.com/vuejs/vetur) - adds a ton of quality of life improvements when using Vue
-2. [TSLint Vue](https://github.com/prograhammer/vscode-tslint-vue) - Vue-specific version of TSLint
+**Clone and run for a quick way to see Electron in action.**
 
-To use this project:
-1. clone the repository
-2. cd into folder
-3. npm install / yarn
-4. npm run dev
+This is an upgraded version of the [Electron Quick Start Typescript repo](https://github.com/electron/electron-quick-start-typescript).
 
-To debug the renderer process:
-1. npm run dev
-2. add a breakpoint [here](https://github.com/jtidwe11/electron-quick-start-typescript/blob/ba52b5aef1fb3af10382321d2538bdec383e070d/src/App.vue#L13)
-3. hit F5
-4. click the button
+Upgrades from standard version:
 
-The base comes from Electron's own [Electron Typescript Quick Start](https://github.com/electron/electron-quick-start-typescript), and was meant to be a small, but invaluable, addition to that.
+- [Webpack](https://github.com/webpack/webpack) - all the benefits of Webpack with HMR out of the box.
+- [TSLint](https://github.com/palantir/tslint) - auto-lint and fix on save using [JSS](https://github.com/blakeembrey/tslint-config-standard).
+- [Chrome Debugging](https://github.com/Microsoft/vscode-chrome-debug) - A tool to debug the app's **renderer process**.
+
+## To Use
+
+To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+git clone https://github.com/jtidwe11/electron-quick-start-typescript
+# Go into the repository
+cd electron-quick-start-typescript
+# Install dependencies
+npm install
+# Run the app
+npm start
+```
+
+## Debugging
+
+To debug, simply add a breakpoint and hit F5.  The debugger will attach and stop upon hitting.
