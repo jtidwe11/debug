@@ -1,7 +1,7 @@
 {
-	"compilerOptions": {
-		"sourceMap": true,
-		"noImplicitAny": true,
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -9,11 +9,11 @@
     "allowSyntheticDefaultImports": true,
     "target": "esnext",
     "strict": true
-	},
-	"include": [
+  },
+  "include": [
     "src/**/*.ts",
     "src/**/*.vue"
-	],
+  ],
   "exclude": [
     "node_modules"
   ]
