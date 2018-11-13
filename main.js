@@ -11,7 +11,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL('http://localhost:4000');
+  mainWindow.loadURL('https://localhost:4000');
 
   // Open the DevTools.  Careful - using this and the Chrome Debugger
   // does not play nicely together.
