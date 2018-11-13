@@ -24,7 +24,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new HtmlWebpackPlugin({ title: '' }),
+    new HtmlWebpackPlugin(),
     new ForkTsCheckerWebpackPlugin({ tslint: true, tslintAutoFix: true, vue: true, watch: ['./src'] }),
     new VueLoaderPlugin()
   ],
